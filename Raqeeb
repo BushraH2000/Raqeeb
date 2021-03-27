@@ -1,0 +1,114 @@
+import java.util.Scanner;
+
+public class Main {
+    static Scanner input = new Scanner (System.in);
+    public static void main(String[] args) {
+        int c;
+        System.out.println(" ---- Raqeeb ------ ");
+        System.out.println("1- Log in ");
+        System.out.println("2- Sign up ");
+        c = input.nextInt();
+        if (c == 1) {
+            System.out.println("Enter your name: ");
+            String name = input.next();
+            String Lname = input.next();
+            System.out.println();
+            System.out.println("Enter your password: ");
+            String password = input.next();
+            Lname = Lname.trim();
+
+            if (name.equals("Rana") && Lname.equals("Omar") && password.equals("Rana_1998")) {
+
+                c = 1;
+                if (c == 1) {
+                    System.out.println("---- Center Bank ----- ");
+                    System.out.println("Please make your choice: ");
+                    System.out.println("1- Makkah branch     2- Jeddah branch     3- Other branch");
+                    c = input.nextInt();
+                    if (c == 1) {
+                        System.out.println("---- Center Bank - Makkah branch ----- ");
+                        System.out.println("1- AlAziziah     2- Alshawqiah     3- Alshraiea   4- other");
+                        c = input.nextInt();
+                        System.out.println();
+                        if (c == 1) {
+                            System.out.println();
+                            System.out.println("---- Center Bank - Makkah branch - Alaziziah ----- ");
+                            System.out.println("Document Info : ---");
+                            System.out.println("Enter Document number");
+                            int num = input.nextInt();
+                            System.out.println();
+                            System.out.println("##### Document number " + num + " #########");
+                            double per = 0.5;
+                            System.out.println("Usury percentage is :" + per + "%");
+                            System.out.println("Do you want to change the rate ? ");
+                            System.out.println("1- Yes   2- No");
+                            c = input.nextInt();
+                            if (c == 1) {
+                                System.out.println("Enter new rate: ");
+                                per = input.nextDouble();
+                                System.out.println("------- new percentage is -----------");
+                                System.out.println("Usury percentage is :" + per + "%");
+
+                            }
+
+
+                        }
+
+                    }
+
+
+                }
+            }
+
+           else if ( name.equals("Bushra") && Lname.equals("Hussein") && password.equals("Bushra_2000")){
+
+               System.out.println("---- Alrajhi Bank  ----- ");
+               System.out.println();
+               System.out.println("Please make your choice: ");
+               System.out.println("1- calculator    2-google translator    3- Scanner  ");
+               System.out.println("4- Excel      5- Document ");
+               c = input.nextInt();
+               if (c == 1) {
+                   System.out.println("---- calculator service ----- ");
+               } else if (c == 2) {
+                   System.out.println("---- google translator service ----- ");
+               } else if (c == 3) {
+                   System.out.println("---- Scanner service ----- ");
+               } else if (c == 4) {
+                   System.out.println("---- Excel service ----- ");
+               } else if (c == 5) {
+                   System.out.println("---- Document service ----- ");
+                   System.out.println("Document Info : ---");
+                   System.out.println("Enter Document number");
+                   int num = input.nextInt();
+                   System.out.println();
+                   System.out.println("##### Document number " + num + " #########");
+                   double per = 0.5;
+                   System.out.println("Usury percentage is :" + per + "%");
+                   System.out.println("Do you want to change the rate ? ");
+                   System.out.println("1- Yes   2- No");
+                   c = input.nextInt();
+                   if (c == 1) {
+                       System.out.println("Enter new rate: ");
+                       per = input.nextDouble();
+                       System.out.println("------- new percentage is -----------");
+                       System.out.println("Usury percentage is :" + per + "%");
+
+           }}}
+        }else if (c == 2) {
+            System.out.println("---- Sign up -------");
+            System.out.println();
+            System.out.print("Enter your name: ");
+            String name = input.next();
+            System.out.print("Enter your Password: ");
+            String password = input.next();
+            System.out.print("Enter your Age: ");
+            String age  = input.next();
+            System.out.print("Enter your Email: ");
+            String email  = input.next();
+            System.out.print("Enter your Phone number: ");
+            String phone  = input.next();
+            System.out.println();
+            System.out.print(" Seccessfuly Registration -- ");
+        } else System.out.println("Wrong Entry!");
+    }}
